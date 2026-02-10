@@ -27,7 +27,8 @@ def bot():
         "phone": numero,
         "message": resposta
     }
-
+    print("ENVIANDO PARA ZAPI...")
+           
     r = requests.post(url, headers=headers, json=payload)
 
     print("Status envio:", r.status_code)
